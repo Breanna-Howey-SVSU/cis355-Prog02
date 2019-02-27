@@ -2,11 +2,11 @@
 <?php
 
 // include the class that handles database connections
-require "database.php";
+require '../cis355-Prog01/database.php'; //'database.php';
 
 // include the class containing functions/methods for "customer" table
 // Note: this application uses "customer" table, not "cusotmers" table
-require "customer.class.php";
+require 'customer.class.php';
 $cust = new Customer();
  
 // set active record field values, if any 
