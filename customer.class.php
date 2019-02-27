@@ -10,7 +10,7 @@ class Customer {
     private $emailError = null;
     private $mobileError = null;
     private $title = "Customer";
-    private $tableName = "customer";
+    private $tableName = "customers";
     
     function create_record() { // display "create" form
         $this->generate_html_top (1);
@@ -256,7 +256,9 @@ class Customer {
         echo "
             </head>
             <body>
+            <p>
                 <a href='https://github.com/brhowey/cis355-Prog02' target='_blank'>Github</a><br />
+            </p>
                 <div class='container'>
                     <p class='row'>
                         <h3>$this->title" . "s" . "</h3>
